@@ -1,6 +1,5 @@
 import { useState } from "react";
 import {
-  Filter,
   Search,
   Mail,
   Calendar,
@@ -9,18 +8,14 @@ import {
   Reply,
   Clock,
   CheckCircle,
-  XCircle,
   AlertCircle,
   ThumbsUp,
   ThumbsDown,
   Minus,
-  ArrowRight,
   X,
   Send,
-  Save,
   User,
-  Building,
-  Tag
+  Building
 } from "lucide-react";
 
 interface EmailThread {
@@ -647,7 +642,7 @@ const Followups = () => {
                 <div className="email-thread">
                   <h4>Email Conversation</h4>
                   <div className="thread-list">
-                    {selectedFollowup.emailThread.map((email, index) => (
+                    {selectedFollowup.emailThread.map((email) => (
                       <div key={email.id} className="thread-item">
                         <div className="thread-header">
                           <div className="thread-meta">

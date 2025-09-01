@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { databaseService, apiStatusService, type ApiStatusReport, type EndpointStatus } from '../services';
+import { databaseService, apiStatusService, type ApiStatusReport } from '../services';
 import { RefreshCw, Database, AlertTriangle, CheckCircle, Activity, Wifi, WifiOff } from 'lucide-react';
 
 const DatabaseManager = () => {

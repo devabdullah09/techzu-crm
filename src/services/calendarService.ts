@@ -1,4 +1,4 @@
-const API_BASE_URL = 'https://513ef456804f.ngrok-free.app';
+
 
 export interface CalendarEvent {
   id: string;
@@ -23,7 +23,7 @@ export interface BusySlot {
 export const calendarService = {
   // Note: Calendar endpoints don't exist in your backend yet
   // Using mock data for development
-  async getBusySlots(startTime: string, endTime: string): Promise<BusySlot[]> {
+  async getBusySlots(): Promise<BusySlot[]> {
     // Mock implementation since backend doesn't have calendar endpoints
     console.warn('Calendar endpoints not implemented in backend, using mock data');
     return [

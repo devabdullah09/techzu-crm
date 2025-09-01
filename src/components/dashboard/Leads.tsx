@@ -20,7 +20,7 @@ import { leadsService, type Lead } from "../../services";
 
 const Leads = () => {
   const [leads, setLeads] = useState<Lead[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
+
 
   const [selectedLeads, setSelectedLeads] = useState<string[]>([]);
   const [searchTerm, setSearchTerm] = useState("");
@@ -40,13 +40,10 @@ const Leads = () => {
   useEffect(() => {
     const loadLeads = async () => {
       try {
-        setIsLoading(true);
         const leadsData = await leadsService.getLeads();
         setLeads(leadsData);
       } catch (error) {
         console.error('Failed to load leads:', error);
-      } finally {
-        setIsLoading(false);
       }
     };
 

@@ -1,4 +1,4 @@
-import { UserCircle, Mail, Building2, CalendarDays } from "lucide-react";
+import { UserCircle, Building2, CalendarDays } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const MyProfile = () => {

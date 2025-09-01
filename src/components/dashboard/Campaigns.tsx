@@ -14,11 +14,9 @@ import {
   Send,
   X,
   Save,
-  ArrowRight,
   ArrowDown,
   Copy,
   Settings,
-  Calendar,
   CheckCircle,
   AlertCircle
 } from "lucide-react";
